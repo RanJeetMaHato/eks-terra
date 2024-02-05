@@ -33,7 +33,7 @@ data "aws_subnets" "public" {
 }
 #cluster provision
 resource "aws_eks_cluster" "eks_cluster" {
-  name     = "First_cluster"
+  name     = "First-cluster"
   role_arn = aws_iam_role.role.arn
 
   vpc_config {
